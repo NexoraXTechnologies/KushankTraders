@@ -1,0 +1,230 @@
+/* General Utilities for Pages */
+.border-top {
+  border-top: 1px solid var(--border);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.section-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--muted-foreground);
+  margin-bottom: 3rem;
+}
+
+.center-container {
+  max-width: 800px;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 6rem 0;
+  background: var(--muted);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-pill {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.35rem 1rem;
+  border: 1px solid var(--foreground);
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--muted-foreground);
+  margin-bottom: 2.5rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* About Us Section */
+.about-section {
+  background: var(--background);
+}
+
+/* Services Section */
+.services-section {
+  padding: 5rem 0;
+  background: var(--muted);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--background);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  transition: border-color 0.2s;
+}
+
+.service-card:hover {
+  border-color: var(--muted-foreground);
+}
+
+.service-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.service-card-desc {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+}
+
+/* Why Choose Us Section */
+.why-choose-section {
+  padding: 5rem 0;
+  background: var(--background);
+}
+
+.why-choose-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.why-choose-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-item {
+  background: var(--background);
+  border: 1px solid var(--border);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkmark {
+  font-weight: bold;
+}
+
+/* Mission Section */
+.mission-section {
+  background: var(--muted);
+}
+
+.mission-action {
+  margin-top: 2.5rem;
+}
+
+/* Quick Links Section */
+.quick-links-section {
+  padding: 5rem 0;
+  background: var(--muted);
+}
+
+.quick-links-section .section-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.quick-link-card {
+  background: var(--background);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  display: block;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.quick-link-card:hover {
+  border-color: var(--muted-foreground);
+  box-shadow: var(--shadow-sm);
+}
+
+.quick-link-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.quick-link-desc {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .why-choose-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .center-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
